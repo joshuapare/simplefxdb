@@ -55,6 +55,7 @@ func (i *IndexEngine) LoadIndexes(collection string) error {
 	return nil
 }
 
+// TODO - LoadIndex loads the indexes into memory
 func (i *IndexEngine) LoadIndex(location string) {
 	fmt.Printf("loading index at location %s into memory\n", location)
 }

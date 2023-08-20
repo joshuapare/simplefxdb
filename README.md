@@ -37,9 +37,10 @@ This project can be broken into the following main components:
 
 1. **Query Parsing Engine**: Interprets and processes our query syntax.
 2. **Collection Engine**: Manages creation and access to different collections.
-3. **Storage Engine**: Handles the reading and writing of documents to the disk.
-4. **Logger**: An essential tool for logging events, errors, and information.
-5. **Webserver**: A simple server exposing the query endpoint.
+3. **Document Engine**: Manages creation and access to documents within collections.
+4. **Storage Engine**: Handles the reading and writing of documents to the disk.
+5. **Logger**: An essential tool for logging events, errors, and information.
+6. **Webserver**: A simple server exposing the query endpoint.
 
 ## Getting Started
 
