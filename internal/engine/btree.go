@@ -1,11 +1,5 @@
 package engine
 
-import (
-	"fmt"
-	"io"
-	"os"
-)
-
 type BTreeNode struct {
 	left  *BTreeNode
 	right *BTreeNode
@@ -41,34 +35,4 @@ func (n *BTreeNode) insert(data int64) {
 			n.right.insert(data)
 		}
 	}
-}
-
-func print(w io.Writer, node *BTreeNode, ns int, ch rune) {
-	if node == nil {
-		return
-	}
-
-	for i := 0; i < ns; i++ {
-		fmt.Fprint(w, " ")
-	}
-	fmt.Fprintf(w, "%c:%v\n", ch, node.data)
-	print(w, node.left, ns+2, 'L')
-	print(w, node.right, ns+2, 'R')
-}
-
-func main() {
-	tree := &BTree{}
-	tree.insert(100).
-		insert(-20).
-		insert(-50).
-		insert(-15).
-		insert(-60).
-		insert(50).
-		insert(60).
-		insert(55).
-		insert(85).
-		insert(15).
-		insert(5).
-		insert(-10)
-	print(os.Stdout, tree.root, 0, 'M')
 }
