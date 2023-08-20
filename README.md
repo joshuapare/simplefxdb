@@ -1,16 +1,16 @@
 # simplefxdb: A Simple Document Database Engine using FX
 
-Welcome to **SimpleFXDB**, a minimalistic filesystem-based document database engine written in Go. This project primarily demonstrates the power and utility of **FX** in Go for dependency injection.
+Welcome to **SimpleFXDB**, a minimalistic filesystem-based document database engine written in Go. This project primarily demonstrates the power and utility of [**FX**](https://github.com/uber-go/fx) in Go for dependency injection.
 
 ## Why SimpleFXDB?
 
-While Go is renowned for its simplicity and straight-to-the-point nature, dependency injection frameworks such as FX can help developers better structure their applications, manage dependencies, and avoid boilerplate. DI frameworks are a game changer in the world of large applications with tons of components, services, and dependencies.
+While Go is renowned for its simplicity and straight-to-the-point nature, dependency injection frameworks such as [FX](https://github.com/uber-go/fx) can help developers better structure their applications, manage dependencies, and avoid boilerplate. DI frameworks are a game changer in the world of large applications with tons of components, services, and dependencies.
 
 ## Features
 
 - Simple query syntax to interact with the database.
 - Uses the filesystem structure and JSON to store `collections` with `documents`.
-- Dependency injection using FX
+- Dependency injection using [FX](https://github.com/uber-go/fx)
 
 **Note**: This project is for educational purposes and does not include advanced features found in real database engines, such as paging, transactions, and indexes.
 
@@ -45,7 +45,7 @@ This project can be broken into the following main components:
 
 ### Setting Up the Project
 
-1. Clone the repository: `git clone github.com/joshuapare/simplefxdb`
+1. Clone the repository: `git clone https://github.com/joshuapare/simplefxdb.git`
 
 2. Install the dependencies: `go mod download`
 
